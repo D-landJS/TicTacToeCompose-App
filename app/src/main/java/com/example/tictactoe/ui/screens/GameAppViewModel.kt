@@ -39,8 +39,8 @@ data class UiState(
 )
 
 sealed interface GameState {
-    object NotStarted : GameState
-    object InProgress : GameState
+    data object NotStarted : GameState
+    data object InProgress : GameState
     data class Finished(val winner: Winner) : GameState
 }
 
