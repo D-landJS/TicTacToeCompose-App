@@ -14,7 +14,5 @@ data class TicTacToe(
         return TicTacToe(newBoard, nextPlayer())
 
     }
-
-
         private fun nextPlayer() = if (currentPlayer == 'X') 'O' else 'X'
     }
